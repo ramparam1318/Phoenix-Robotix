@@ -3,3 +3,5 @@ the file with name dataset.sql is for the table creation with table name "readin
 the file with name sensor_route.js is for the fetching data from different sensors in json formate,
 the file with name display_result is the html5 file for displaying the result of data_set.
 
+Howerver, Here i am unable to add the user authentication and the time constraints to the api.
+
