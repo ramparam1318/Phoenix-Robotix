@@ -22,14 +22,14 @@ router.get('/', (req, res, next) => {
     .select()
     .exec()
     .then(result => {
-      res.status(200).json({
+      res.status(150).json({
         sensors: result.map(item => {
           return item._doc
         })
       });
     })
     .catch(err => {
-      res.status(500).json({
+      res.status(400).json({
         error: err
       });
     });
