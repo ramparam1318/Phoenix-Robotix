@@ -4,5 +4,5 @@ CREATE TABLE readings_dataset (
     timeofreading DATETIME,
     temperature DECIMAL(10,2),
     PRIMARY KEY (cage_id, dateofreading),
-    INDEX (dateofreading, cage_id) -- suggested index, useful for time-based queries
+    INDEX (dateofreading, cage_id) -- adding index, for good readability
 )
