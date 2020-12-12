@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="mypanel"></div>
+
+    <script>
+    $.getJSON('./Phoenix-Robotix/reading_dataset.sql', function(data) {
+        
+        var text = 'sensor_id: ${reading_dataset.server_id}<br>
+                    Time: ${reading_dataset.timeofreading}<br>
+                    temperature: ${reading_dataset.temperature}'
+                    
+        $(".mypanel").html(text);
+    });
+    </script>
+    
+</body>
+</html>
